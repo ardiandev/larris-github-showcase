@@ -6,7 +6,7 @@ import './editor.scss';
 
 export default function Edit(props) {
 	const { attributes, setAttributes } = props;
-	const { repoLink, repoData } = attributes;
+	const { repoLink, repoData, repoPage } = attributes;
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(null);
 
@@ -82,6 +82,10 @@ export default function Edit(props) {
 					</div>
 				</div>
 				<p>{repoData.description}</p>
+				<div className='btn-container'>
+					<button>Visit Repository</button>
+					{repoPage ? <button>Case Study</button> : ""}
+				</div>
 				</>
 		);
 	};
@@ -94,6 +98,12 @@ export default function Edit(props) {
 						label={__('GitHub Repo Link', 'larris-github-showcase')}
 						value={repoLink}
 						onChange={(value) => setAttributes({ repoLink: value })}
+					/>
+					<TextControl
+						label="Page about the repository" 
+						help="Enter the URL of the page that provides detailed information or a case study about this repository." 
+						value={repoPage}
+						onChange={(value) => setAttributes({ repoPage: value })}
 					/>
 					<Button
 						variant="primary"

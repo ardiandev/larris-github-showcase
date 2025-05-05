@@ -23,6 +23,9 @@
     },
     "repoData": {
       "type": "object"
+    },
+    "pageRepo": {
+      "type": "string"
     }
   }
 }

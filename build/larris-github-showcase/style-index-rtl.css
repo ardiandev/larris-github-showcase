@@ -60,3 +60,23 @@
 .repo-name:hover::after {
   opacity: 1;
 }
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button container style */
+.btn-container button {
+  padding: 5px 10px;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+/* Hover effect */
+.btn-container button:hover {
+  transform: scale(0.98); /* Slightly increase button size on hover */
+}
