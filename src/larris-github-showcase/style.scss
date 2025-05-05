@@ -20,6 +20,10 @@
 		margin: 0;
 		padding: 0;
 	}
+
+	p {
+		font-size: 14px;
+	}
 }
 
 .wp-block-create-block-larris-github-showcase:hover {
@@ -42,7 +46,7 @@
 
 .repo-name {
 	text-transform: capitalize;
-	font-size: 24px;
+	font-size: 18px;
 	display: inline-block;
 	position: relative;
 }

@@ -9,7 +9,8 @@
  $transientKey = 'github_repo_data_' . md5($repoApi);
  $cachedData   = get_transient($transientKey);
  $repoData     = null;
- 
+ $repoPage 	   = $attributes['repoPage'] ?? null;
+
  if ($cachedData) {
 	 // Use cached data
 	 $repoData = $cachedData;
@@ -68,14 +69,16 @@
 				 <p><?php echo esc_html($repoData['description']); ?></p>
 			 <?php endif; ?>
  
-			 <p><strong>Source:</strong> <?php echo esc_html($repoData['source']); ?></p>
 				<div class="btn-container">
 					<a href="<?php echo esc_url($repoLink); ?>" target="_blank" rel="noopener noreferrer">
-					<button>Visit repository</button>
+						<button>Visit repository</button>
 					</a>
-					<button>Case Study</button>
-				</div>
-			 </div>		 
+					<?php if (!empty($repoPage)): ?>
+					<a href="<?php echo esc_url($repoPage); ?>" target="_blank" rel="noopener noreferrer">
+						<button>Case Study</button>
+					</a>
+					 <?php endif; ?>
+			 	</div>		 
 	 <?php endif; ?>
  </div>
  

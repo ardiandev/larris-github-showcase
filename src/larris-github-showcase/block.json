@@ -24,7 +24,7 @@
 		"repoData": {
 			"type": "object"
 		},
-		"pageRepo": {
+		"repoPage": {
 			"type": "string"
 		}
 	}

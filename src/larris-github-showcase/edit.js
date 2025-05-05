@@ -84,7 +84,7 @@ export default function Edit(props) {
 				<p>{repoData.description}</p>
 				<div className='btn-container'>
 					<button>Visit Repository</button>
-					{repoPage ? <button>Case Study</button> : ""}
+					{repoPage && repoPage.trim() !== "" ? <button>Case Study</button> : ""}
 				</div>
 				</>
 		);

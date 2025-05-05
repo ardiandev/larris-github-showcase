@@ -29,7 +29,7 @@ return array(
 			'repoData' => array(
 				'type' => 'object'
 			),
-			'pageRepo' => array(
+			'repoPage' => array(
 				'type' => 'string'
 			)
 		)
