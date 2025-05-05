@@ -76,8 +76,8 @@ export default function Edit(props) {
 					</a>
 				</h4>
 					<div className='info-container'>
-						<p>⭐ Stars: {repoData.stars}</p>
-						<p>🍴 Forks: {repoData.forks}</p>
+						<p>⭐ {repoData.stars}</p>
+						<p>🍴 {repoData.forks}</p>
 
 					</div>
 				</div>
