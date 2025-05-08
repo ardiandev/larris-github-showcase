@@ -69,7 +69,7 @@ export default function Edit(props) {
 				<>
 				<div className="name-info-container">
 				<h4 className="repo-name">
-					<a href={repoData.html_url} target="_blank" rel="noopener noreferrer">
+					<a href={repoLink} target="_blank" rel="noopener noreferrer">
 						{repoData.name
 						.replace(/-/g, ' ')          
 						.replace(/\b\w/g, (c) => c.toUpperCase())}  
@@ -83,7 +83,7 @@ export default function Edit(props) {
 				</div>
 				<p>{repoData.description}</p>
 				<div className='btn-container'>
-					<button>Visit Repository</button>
+					<button disabled>Visit Repository</button>
 					{repoPage && repoPage.trim() !== "" ? <button>Case Study</button> : ""}
 				</div>
 				</>
