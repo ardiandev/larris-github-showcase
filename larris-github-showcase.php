@@ -1,16 +1,19 @@
 <?php
 /**
  * Plugin Name:       Larris Github Showcase
- * Description:       Example block scaffolded with Create Block tool.
+ * Plugin URI:        https://github.com/ardiandev/larris-github-showcase
+ * Description:       A WordPress block plugin to display GitHub repository details with caching and fallback options.
  * Version:           0.1.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
- * Author:            The WordPress Contributors
+ * Author:            Ardian Pradana
+ * Author URI:        https://ardianpradana.com/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       larris-github-showcase
+ * Domain Path:       /languages
  *
- * @package CreateBlock
+ * @package           LarrisGithubShowcase
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

@@ -50,11 +50,11 @@ if ($cachedData) {
         <p>No repository data available.</p>
     <?php else: ?>
         <div class="name-info-container">
-            <h4 class="repo-name">
+            <h3 class="repo-name">
                 <a href="<?php echo esc_url($repoLink); ?>" target="_blank" rel="noopener noreferrer">
                     <?php echo esc_html(ucwords(str_replace('-', ' ', $repoData['name']))); ?>
                 </a>
-            </h4>
+            </h3>
 
             <div class="info-container">
                 <p>
