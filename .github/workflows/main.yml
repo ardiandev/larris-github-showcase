@@ -1,9 +1,9 @@
-name: Deploy Larris Github Showcase
+name: Deploy Larris Github Showcase via FTP
 
 on:
   push:
     branches:
-      - main  # Change this if you're using a different branch
+      - main  # Change if needed
 
 jobs:
   deploy:
@@ -21,10 +21,10 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_PATH }}
-          local-dir: ./  # Push all files from repo
+          local-dir: ./   # Deploy everything from repo root
           exclude: |
-            **/.git*
-            **/.github*
-            **/node_modules/*
+            **/.git/**
+            **/.github/**
+            **/node_modules/**
             **/*.md
-            **/*.gitignore
+            **/.gitignore
